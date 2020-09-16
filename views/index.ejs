@@ -23,7 +23,7 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col"><input class="form-control" name="display" type="number"></th>
+                            <th scope="col"><input class="form-control" name="display" type="text"></th>
                         </tr>
                     </thead>
                 </table>
@@ -45,9 +45,9 @@
                             <td><button name="btn9" class="btn btn-info btn-lg btn-block">9</button></td>
                         </tr>
                         <tr>
-                            <th><button name="btn*" class="btn btn-info btn-lg btn-block">*</button></th>
+                            <th><button name="btnAsterisco" class="btn btn-info btn-lg btn-block">*</button></th>
                             <td><button name="btn0" class="btn btn-info btn-lg btn-block">0</button></td>
-                            <td><button name="btn#" class="btn btn-info btn-lg btn-block">#</button></td>
+                            <td><button name="btnCerc" class="btn btn-info btn-lg btn-block">#</button></td>
                         </tr>
                     </tbody>
                 </table>
@@ -72,5 +72,137 @@
     crossorigin="anonymous"></script>
 
 <script src="/js/bootstrap.min.js"></script>
+
+<script>
+    function showNum1() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "1"
+    }
+
+    document
+        .querySelector("button[name=btn1]")
+        .addEventListener("click", showNum1);
+
+    // ------------------------------------------------------
+
+    function showNum2() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "2"
+    }
+
+    document
+        .querySelector("button[name=btn2]")
+        .addEventListener("click", showNum2);
+
+    // ------------------------------------------------------
+
+    function showNum3() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "3"
+    }
+
+    document
+        .querySelector("button[name=btn3]")
+        .addEventListener("click", showNum3);
+
+    // ------------------------------------------------------
+
+    function showNum4() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "4"
+    }
+
+    document
+        .querySelector("button[name=btn4]")
+        .addEventListener("click", showNum4);
+
+    // ------------------------------------------------------
+
+    function showNum5() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "5"
+    }
+
+    document
+        .querySelector("button[name=btn5]")
+        .addEventListener("click", showNum5);
+
+    // ------------------------------------------------------
+
+    function showNum6() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "6"
+    }
+
+    document
+        .querySelector("button[name=btn6]")
+        .addEventListener("click", showNum6);
+
+    // ------------------------------------------------------
+
+    function showNum7() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "7"
+    }
+
+    document
+        .querySelector("button[name=btn7]")
+        .addEventListener("click", showNum7);
+
+    // ------------------------------------------------------
+
+    function showNum8() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "8"
+    }
+
+    document
+        .querySelector("button[name=btn8]")
+        .addEventListener("click", showNum8);
+
+    // ------------------------------------------------------
+
+    function showNum9() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "9"
+    }
+
+    document
+        .querySelector("button[name=btn9]")
+        .addEventListener("click", showNum9);
+
+    // ------------------------------------------------------
+
+    function showNumAsterisco() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "*"
+    }
+
+    document
+        .querySelector("button[name=btnAsterisco]")
+        .addEventListener("click", showNumAsterisco);
+
+    // ------------------------------------------------------
+
+    function showNum0() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "0"
+    }
+
+    document
+        .querySelector("button[name=btn0]")
+        .addEventListener("click", showNum0);
+
+    // ------------------------------------------------------
+
+    function showNumCerc() {
+        var displayValue = document.querySelector("input[name=display]").value;
+        document.querySelector("input[name=display]").value = displayValue + "#"
+    }
+
+    document
+        .querySelector("button[name=btnCerc]")
+        .addEventListener("click", showNumCerc);
+</script>
 
 </html>
